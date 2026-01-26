@@ -1,82 +1,84 @@
 # Claudable
 
-Metaproyecto de Claude Code para crear páginas web profesionales al nivel de Lovable.
+> [Leer en Español](README.es.md)
 
-## Qué es esto
+A Claude Code metaproject for creating professional web pages at Lovable-level quality.
 
-**NO es una web**, es una "caja de herramientas". Cuando abras Claude Code en este directorio, tendrás todo configurado para pedirle que te cree webs profesionales.
+## What is this
 
-## Cómo usar
+**NOT a website** - it's a "toolbox". When you open Claude Code in this directory, you'll have everything configured to ask it to create professional websites for you.
 
-1. Abre Claude Code en este directorio
-2. Pide lo que necesites: "Crea una landing page para una startup de IA"
-3. Usa los skills disponibles para guiar el proceso
+## How to use
 
-## Skills Disponibles
+1. Open Claude Code in this directory
+2. Ask for what you need: "Create a landing page for an AI startup"
+3. Use the available skills to guide the process
 
-### Plugin Oficial (Anthropic)
-| Skill | Descripción | Cuándo usar |
+## Available Skills
+
+### Official Plugin (Anthropic)
+| Skill | Description | When to use |
 |-------|-------------|-------------|
-| `/frontend-design` | Crear interfaces distintivas y profesionales | Para cualquier UI/diseño |
+| `/frontend-design` | Create distinctive, professional interfaces | For any UI/design work |
 
-### Skills Locales
-| Skill | Descripción | Cuándo usar |
+### Local Skills
+| Skill | Description | When to use |
 |-------|-------------|-------------|
-| `/claudable-stack` | Stack técnico y sistema de diseño | Al configurar un proyecto |
-| `/claudable-workflow` | Workflow paso a paso | Al iniciar un proyecto nuevo |
-| `/claudable-design` | Directrices de diseño visual | Complementa frontend-design |
+| `/claudable-stack` | Tech stack and design system | When setting up a project |
+| `/claudable-workflow` | Step-by-step workflow | When starting a new project |
+| `/claudable-design` | Visual design guidelines | Complements frontend-design |
 
-## MCPs Configurados
+## Configured MCPs
 
-- **Nanobanana** - Generación de imágenes con Gemini (requiere `GOOGLE_API_KEY`)
-- **Figma** - Diseño a código pixel-perfect
-- **Playwright** - Screenshots y testing visual
-- **Supabase** - Backend (requiere `SUPABASE_ACCESS_TOKEN`)
+- **Nanobanana** - Image generation with Gemini (requires `GOOGLE_API_KEY`)
+- **Figma** - Pixel-perfect design to code
+- **Playwright** - Screenshots and visual testing
+- **Supabase** - Backend (requires `SUPABASE_ACCESS_TOKEN`)
 
-## Stack Default
+## Default Stack
 
 - React 18 + TypeScript
 - Vite
 - Tailwind CSS v4
-- shadcn/ui (estilo "new-york")
-- Motion para animaciones
+- shadcn/ui ("new-york" style)
+- Motion for animations
 
 ## Templates
 
-El directorio `templates/` contiene proyectos base listos para usar:
+The `templates/` directory contains ready-to-use base projects:
 
-- `vite-react-shadcn/` - Proyecto base completo con todo configurado
+- `vite-react-shadcn/` - Complete base project with everything configured
 
-### Usar un template
+### Using a template
 
 ```bash
-# Copiar template a nuevo proyecto
-cp -r templates/vite-react-shadcn ../mi-nuevo-proyecto
-cd ../mi-nuevo-proyecto
+# Copy template to new project
+cp -r templates/vite-react-shadcn ../my-new-project
+cd ../my-new-project
 npm install
 npm run dev
 ```
 
-## Configuración de MCPs
+## MCP Configuration
 
-Para usar todos los MCPs, configura estas variables de entorno:
+To use all MCPs, set these environment variables:
 
 ```bash
-# Para Nanobanana (generación de imágenes)
-export GOOGLE_API_KEY="tu-api-key-de-google"
+# For Nanobanana (image generation)
+export GOOGLE_API_KEY="your-google-api-key"
 
-# Para Supabase (backend)
-export SUPABASE_ACCESS_TOKEN="tu-access-token"
+# For Supabase (backend)
+export SUPABASE_ACCESS_TOKEN="your-access-token"
 ```
 
-## Reglas de Diseño
+## Design Rules
 
-1. **NUNCA** uses clases de color directas (`text-white`, `bg-zinc-900`)
-2. **SIEMPRE** usa tokens semánticos (`bg-background`, `text-foreground`)
-3. **EVITA** tipografías genéricas (Inter, Arial, Roboto)
-4. **PREFIERE** fuentes con personalidad (Space Grotesk, DM Sans, Clash Display)
+1. **NEVER** use direct color classes (`text-white`, `bg-zinc-900`)
+2. **ALWAYS** use semantic tokens (`bg-background`, `text-foreground`)
+3. **AVOID** generic typefaces (Inter, Arial, Roboto)
+4. **PREFER** fonts with personality (Space Grotesk, DM Sans, Clash Display)
 
-## Estructura del Metaproyecto
+## Metaproject Structure
 
 ```
 claudable/
@@ -92,9 +94,13 @@ claudable/
 └── README.md
 ```
 
-## Recursos
+## Resources
 
 - [Lovable Documentation](https://docs.lovable.dev/)
 - [Claude Code Skills](https://code.claude.com/docs/en/skills)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
+
+## License
+
+MIT
