@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "nanobanana": {
+      "command": "npx",
+      "args": ["-y", "@zhongweili/nanobanana-mcp-server"],
+      "env": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}"
+      }
+    },
+    "figma": {
+      "url": "https://mcp.figma.com/mcp"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@anthropics/mcp-playwright"]
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server-supabase@latest"],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "${SUPABASE_ACCESS_TOKEN}"
+      }
+    }
+  }
+}
