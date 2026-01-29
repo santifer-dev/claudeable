@@ -1,6 +1,6 @@
 # Claudable
 
-**[:gb: English](#the-problem)** | **[:es: Español](#-español)**
+**[:gb: English](#the-problem)** | **[:es: Español](#es-español)**
 
 > A Claude Code metaproject for creating professional web pages at Lovable-level quality.
 
